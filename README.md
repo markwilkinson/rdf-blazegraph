@@ -3,6 +3,9 @@ RDF::Blazegraph
 
 An RDF::Repository implementation for [Blazegraph](http://blazegraph.com); a REST client for [NanoSparqlServer](https://wiki.blazegraph.com/wiki/index.php/NanoSparqlServer).
 
+MDW:  I have hacked this a tiny bit to make it compatible as an RDF Repository for [Active Triples](https://github.com/ActiveTriples/ActiveTriples), so that you can put Blazegraph under a Rails app.  The hacking is mainly changing the range of rdf and sparql library versions that are allowed so that they overlap with the versions required by Active Triples.
+
+
 ## Usage
 
 Run `gem install rdf-blazegraph` or add `gem 'rdf-blazegraph'` to your Gemspec.
