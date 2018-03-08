@@ -11,8 +11,8 @@ Gem::Specification.new do |gem|
   gem.summary            = 'A Blazegraph Repository adapter for RDF.rb'
   gem.description        = 'A Blazegraph Repository adapter for RDF.rb'
 
-  gem.authors            = ['Tom Johnson']
-  gem.email              = 'public-rdf-ruby@w3.org'
+  gem.authors            = ['Tom Johnson', 'Mark Wilkinson']
+  gem.email              = 'markw@illuminae.com'
 
   gem.platform           = Gem::Platform::RUBY
   gem.files              = %w(AUTHORS README.md UNLICENSE VERSION) + Dir.glob('lib/**/*.rb')
@@ -24,16 +24,23 @@ Gem::Specification.new do |gem|
 
   #gem.add_runtime_dependency     'rdf',           '~> 3.0'
   #gem.add_runtime_dependency     'sparql-client', '~> 3.0'
-  gem.add_runtime_dependency     'rdf',           '>= 2.2', '< 4.0'
-  gem.add_runtime_dependency     'sparql-client', '>= 2.2', '< 4.0'
+  # Mark's Changes
+  #gem.add_runtime_dependency     'rdf',           '>= 2.2', '< 4.0'
+  gem.add_runtime_dependency     'rdf',           '>= 2.0.2', '< 4.0'
+  #gem.add_runtime_dependency     'sparql-client', '>= 2.2', '< 4.0'
+  gem.add_runtime_dependency     'sparql-client', '>= 2.0.2', '< 4.0'
   gem.add_runtime_dependency     'net-http-persistent', '~> 2.9'
 
   #gem.add_development_dependency 'linkeddata',    '~> 3.0'
   #gem.add_development_dependency 'rdf-spec',      '~> 3.0'
   #gem.add_development_dependency 'rdf-vocab',     '~> 3.0'
-  gem.add_development_dependency 'linkeddata',    '>= 2.2', '< 4.0'
-  gem.add_development_dependency 'rdf-spec',      '>= 2.2', '< 4.0'
-  gem.add_development_dependency 'rdf-vocab',     '>= 2.2', '< 4.0'
+# Mark's Changes
+  gem.add_development_dependency 'linkeddata',    '>= 2.0.2', '< 4.0'
+  gem.add_development_dependency 'rdf-spec',      '>= 2.0.2', '< 4.0'
+  gem.add_development_dependency 'rdf-vocab',     '>= 2.0.2', '< 4.0'
+#  gem.add_development_dependency 'linkeddata',    '>= 2.2', '< 4.0'
+#  gem.add_development_dependency 'rdf-spec',      '>= 2.2', '< 4.0'
+#  gem.add_development_dependency 'rdf-vocab',     '>= 2.2', '< 4.0'
   gem.add_development_dependency 'rspec',         '~> 3.7'
   gem.add_development_dependency 'rspec-its',     '~> 1.2'
   gem.add_development_dependency 'yard',          '~> 0.9.2'
